@@ -1,13 +1,13 @@
 variable "ami_id" {
   description = "AMI ID"
   type = string
-  default = "ami-0b72821e2f35e396"
+  default = "ami-098143f68772b34f5"
 }
 
 variable "ec2_name" {
   description = "Name of EC2"
   type = string
-  default = "alanp-ec2-date-tf"
+  default = "alanp-ec2-date-tf-var"
 }
 
 variable "instance_type" {
@@ -25,17 +25,17 @@ variable "key_name" {
 variable "sg_name" {
   description = "Name of EC2 Security Group"
   type = string
-  default = "alanp-ec2-securitygroup"
+  default = "alan_ec2_20jul_securitygroup2"
 }
 
 variable "vpc_name" {
   description = "Name of VPC to use"
   type = string
-  default = "alan-vpc"
+  default = "alanvpc_20jul"
 }
 
 variable "subnet_name" {
   description = "Name of subnet to use"
   type = string
-  default = "alanp-subnet-public-useast1a"
+  default = "alan_pubsubnet_1a"
 }

@@ -17,7 +17,7 @@ resource "aws_instance" "sample_ec2_var" {
     ami = var.ami_id
     instance_type = var.instance_type
     key_name = var.key_name
-    subnet_id = data.aws_subnet.selected_subnet.id
+    subnet_id = data.aws_subnet.alan_pubsubnet_1a.id
     associate_public_ip_address = true
     vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
